@@ -1,0 +1,19 @@
+/*
+ * config.h.in - build-time configuration template.
+ *
+ * Processed by CMake (configure_file) into <build>/config.h. Do not edit the
+ * generated file; edit this template instead.
+ *
+ * Exactly one of the two macros below is defined, depending on which
+ * decompression backend CMake selected (see cmake/inflate.cmake):
+ *
+ *   HFS_INFLATE_WITH_LIBDEFLATE  - libdeflate (system or bundled)
+ *   HFS_INFLATE_WITH_ZLIB        - zlib
+ */
+#ifndef HFS_CONFIG_H
+#define HFS_CONFIG_H
+
+#cmakedefine HFS_INFLATE_WITH_LIBDEFLATE
+#cmakedefine HFS_INFLATE_WITH_ZLIB
+
+#endif // HFS_CONFIG_H
